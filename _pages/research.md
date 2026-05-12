@@ -9,7 +9,7 @@ nav_order: 2
 
 ## Research Interests
 
-I am an applied microeconomist studying decision-making in labor market and financial contexts. My research combines administrative data with field experiments in partnership with firms and schools to understand how individuals make important financial and labor market decisions.
+I am an applied microeconomist studying decision-making in labor market and financial contexts.
 
 Current topics I am interested in include plan choice in the Medicare market, self-selection in education investment decisions, and human–AI interactions in consumption, savings, and labor market decisions.
 
