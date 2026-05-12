@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /tilden/
-title: tilden
+title: Tilden
 description:
 nav: true
-nav_order: 6
+nav_order: 5
 ---
 
 I have a husky named **Tilden** that I am obsessed with! Some fun facts about Tilden:
