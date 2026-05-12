@@ -1,0 +1,52 @@
+# This file is only read when _pages/cv.md uses `layout: cv` (a structured CV layout).
+# Currently cv.md uses `layout: page` and shows a "CV available upon request" note,
+# so the entries below are dormant. Fill them in when you switch layouts.
+
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Elaine B. Shen
+    - name: Affiliation
+      value: PhD Candidate, Department of Economics, UC Berkeley
+    - name: Email
+      value: elaineshen [at] berkeley [dot] edu
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD, Economics
+      institution: University of California, Berkeley
+      year: in progress
+    - title: B.A.
+      institution: Georgetown University
+      year:
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Insurance Portfolio Management Team
+      institution: BlackRock, New York
+      year: ~2016 – 2021
+      description:
+        - FINRA Registered Representative (Series 7 & Series 63), 2016 – 2021.
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year:
+      items:
+        - GSI Teaching Award, UC Berkeley (first semester teaching)
+
+- title: Research Funding
+  type: list
+  contents:
+    - National Science Foundation (NSF)
+    - Abdul Latif Jameel Poverty Action Lab (J-PAL)
+    - Fisher Center for Real Estate and Urban Economics
+    - Law, Economics, and Politics Center at Berkeley Law
+    - Lab for Inclusive FinTech (LIFT)
+    - Opportunity Lab at UC Berkeley
+    - Robert Wood Johnson Foundation
+    - National Endowment for Financial Education (NEFE)
+    - Commonwealth Fund
