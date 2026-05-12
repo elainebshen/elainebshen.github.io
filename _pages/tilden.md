@@ -4,7 +4,7 @@ permalink: /tilden/
 title: Tilden
 description:
 nav: true
-nav_order: 5
+nav_order: 4
 ---
 
 I have a husky named **Tilden** that I am obsessed with! Some fun facts about Tilden:
@@ -14,3 +14,18 @@ I have a husky named **Tilden** that I am obsessed with! Some fun facts about Ti
 - Tilden insists that his presence at office hours was the only reason I won a GSI teaching award.
 
 Additional photos available upon request.
+
+{% assign tilden_photos = site.static_files
+  | where_exp: "f", "f.path contains '/assets/img/tilden/'"
+  | where_exp: "f", "f.extname == '.jpg' or f.extname == '.jpeg' or f.extname == '.png' or f.extname == '.webp' or f.extname == '.gif'"
+  | sort: "name" %}
+
+{% if tilden_photos.size > 0 %}
+<div class="row mt-4">
+  {% for photo in tilden_photos %}
+  <div class="col-sm-6 col-md-4 mb-3">
+    <img src="{{ photo.path | relative_url }}" alt="Tilden" class="img-fluid rounded z-depth-1" loading="lazy">
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
