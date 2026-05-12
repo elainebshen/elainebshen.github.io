@@ -18,13 +18,13 @@ My research is generously funded by the National Science Foundation (NSF), the A
 ## Working Papers
 
 <div class="publications">
-{% bibliography -f preprints --query "@*[abbr=Working Paper]" %}
+{% bibliography -f working %}
 </div>
 
 ## Work in Progress
 
 <div class="publications">
-{% bibliography -f preprints --query "@*[abbr=Work in Progress]" %}
+{% bibliography -f wip %}
 </div>
 
 ## Pre-PhD
