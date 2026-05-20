@@ -17,7 +17,7 @@ Additional photos available upon request.
 
 {% assign tilden_photos = site.static_files
   | where_exp: "f", "f.path contains '/assets/img/tilden/'"
-  | where_exp: "f", "f.extname == '.jpg' or f.extname == '.jpeg' or f.extname == '.png' or f.extname == '.webp' or f.extname == '.gif' or f.extname == '.JPG' or f.extname == '.JPEG' or f.extname == '.PNG' or f.extname == '.WEBP' or f.extname == '.GIF'"
+  | where_exp: "f", "f.extname == '.jpg' or f.extname == '.jpeg' or f.extname == '.png' or f.extname == '.gif' or f.extname == '.JPG' or f.extname == '.JPEG' or f.extname == '.PNG' or f.extname == '.GIF'"
   | sort: "name" %}
 
 {% if tilden_photos.size > 0 %}
