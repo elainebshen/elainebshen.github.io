@@ -21,11 +21,30 @@ Additional photos available upon request.
   | sort: "name" %}
 
 {% if tilden_photos.size > 0 %}
-<div class="row mt-4">
+<div class="tilden-gallery mt-4">
   {% for photo in tilden_photos %}
-  <div class="col-sm-6 col-md-4 mb-3">
-    <img src="{{ photo.path | relative_url }}" alt="Tilden" class="img-fluid rounded z-depth-1" loading="lazy">
-  </div>
+  <img src="{{ photo.path | relative_url }}" alt="Tilden" class="z-depth-1" loading="lazy">
   {% endfor %}
 </div>
+
+<style>
+  .tilden-gallery {
+    column-count: 3;
+    column-gap: 0.5rem;
+  }
+  .tilden-gallery img {
+    width: 100%;
+    margin: 0 0 0.5rem;
+    border-radius: 8px;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    display: block;
+  }
+  @media (max-width: 768px) {
+    .tilden-gallery { column-count: 2; }
+  }
+  @media (max-width: 480px) {
+    .tilden-gallery { column-count: 1; }
+  }
+</style>
 {% endif %}
