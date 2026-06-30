@@ -34,6 +34,8 @@
     {% else %}
       {{ page.title }} | {{ title }}
     {% endif %}
+  {% elsif page.seo_title %}
+    {{ page.seo_title }}
   {% else %}
     {{ title }}
   {% endif %}

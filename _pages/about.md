@@ -1,6 +1,7 @@
 ---
 layout: about
 title: Home
+seo_title: "Elaine Shen — PhD Candidate in Economics, UC Berkeley"
 permalink: /
 subtitle:
 
