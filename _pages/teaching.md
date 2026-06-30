@@ -9,15 +9,26 @@ nav_order: 3
 
 ## UC Berkeley (Economics Department, Haas Business School)
 
-Graduate Student Instructor (GSI) for:
+I worked as a graduate student instructor (GSI) for:
 
-- **ECON 119: Behavioral Economics** &mdash; Dmitry Taubinsky
+- **ECON 119: Behavioral Economics** (Dmitry Taubinsky)
+  <!-- TODO: add Dropbox public link, e.g. [[teaching evaluations]](https://www.dropbox.com/...) -->
   - GSI Teaching Award (first semester teaching)
-- **EWMBA 201B: Evening &amp; Weekend MBA Macroeconomics** &mdash; Jim Wilcox
+- **EWMBA 201B: Evening &amp; Weekend MBA Macroeconomics** (Jim Wilcox)
+  <!-- TODO: add Dropbox public link, e.g. [[teaching evaluations]](https://www.dropbox.com/...) -->
 
 ## Georgetown University
 
-Undergraduate teaching assistant for:
+I worked as an undergraduate teaching assistant for:
 
 - **ECON 001: Microeconomics**
 - **ECON 002: Macroeconomics**
+
+## Mentoring
+
+I have been lucky to work with and mentor some wonderful UC Berkeley undergraduate RAs who have gone on to do amazing things! Here are a few of them:
+
+- **Jingyuan Chen** &mdash; Ph.D. Student at University of Illinois Urbana-Champaign
+- **Atharva Nigudkar** &mdash; Redstone Consulting
+- **Aayush Singh** &mdash; SF Fed Pre-Doc, Ph.D. Student at The University of Texas at Austin
+- **Kate Qian** &mdash; Cornell's Master's in Business Analytics program

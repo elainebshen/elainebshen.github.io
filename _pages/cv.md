@@ -2,8 +2,8 @@
 layout: page
 permalink: /cv/
 title: CV
-nav: true
-nav_order: 4
+nav: false
+nav_order: 5
 description: CV available upon request. A downloadable PDF will be posted here soon.
 ---
 
