@@ -1,34 +1,31 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+# Co-author links shown on the Research page.
+# Key = lowercase last name; firstname must match the form used in the .bib author field.
+# To add a co-author later: copy a block, set the last name, first name(s), and url.
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"lyu":
+  - firstname: ["Junru"]
+    url: https://www.junrulyu.com/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"cuna":
+  - firstname: ["Michael"]
+    url: https://www.michaelgcuna.com/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"carr":
+  - firstname: ["Marion"]
+    url: https://marioncarr.com/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"renkl":
+  - firstname: ["Emanuel"]
+    url: https://www.linkedin.com/in/emanuel-renkl-797633171/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"zhang":
+  - firstname: ["William"]
+    url: https://www.williamzhang.org/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"sticher":
+  - firstname: ["Vanessa"]
+    url: https://vanessasticher.github.io/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"avivi":
+  - firstname: ["Hadar"]
+    url: https://avivihadar.github.io/
