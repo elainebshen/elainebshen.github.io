@@ -11,9 +11,11 @@ nav_order: 3
 
 I worked as a graduate student instructor (GSI) for:
 
-- **ECON 119: Behavioral Economics** (Dmitry Taubinsky) &mdash; [teaching evaluations]({{ '/assets/pdf/econ119_evaluations.pdf' | relative_url }})
+- **ECON 119: Behavioral Economics** (Dmitry Taubinsky)
   - GSI Teaching Award (first semester teaching)
-- **EWMBA 201B: Evening &amp; Weekend MBA Macroeconomics** (Jim Wilcox) &mdash; [teaching evaluations]({{ '/assets/pdf/ewmba201b_evaluations.pdf' | relative_url }})
+  - [teaching evaluations]({{ '/assets/pdf/econ119_evaluations.pdf' | relative_url }})
+- **EWMBA 201B: Evening &amp; Weekend MBA Macroeconomics** (Jim Wilcox)
+  - [teaching evaluations]({{ '/assets/pdf/ewmba201b_evaluations.pdf' | relative_url }})
 
 ## Georgetown University
 
