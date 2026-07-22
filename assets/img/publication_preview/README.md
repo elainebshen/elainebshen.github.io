@@ -55,6 +55,12 @@ If you want a new filename, also update the `preview={...}` line (see below).
 | `mind_the_medigap.png`  | Mind the Medigap     | `working.bib` |
 | `hidden_curriculum.png` | The Hidden Curriculum| `working.bib` |
 
+## Writing the .bib entries themselves
+
+For abstract formatting gotchas — especially **dollar amounts, which must be written
+as `&#36;250` rather than `\$250`** — see
+[`_bibliography/README.md`](../../../_bibliography/README.md).
+
 ## Tips
 
 - **Filename**: lowercase, no spaces (use underscores). It must match the
