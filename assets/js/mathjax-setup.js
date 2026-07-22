@@ -1,10 +1,10 @@
 window.MathJax = {
   tex: {
     tags: "ams",
-    inlineMath: [
-      ["$", "$"],
-      ["\\(", "\\)"],
-    ],
+    // "$" is intentionally NOT an inline-math delimiter: this site writes dollar
+    // amounts (e.g. $250 million) in abstracts, which would otherwise be parsed
+    // as math. Use \( ... \) for inline math.
+    inlineMath: [["\\(", "\\)"]],
   },
   options: {
     renderActions: {
