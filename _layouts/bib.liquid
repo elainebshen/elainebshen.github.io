@@ -203,7 +203,10 @@
         <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
       {% endif %}
       {% if entry.preregistration %}
-        <a href="{{ entry.preregistration }}" class="btn btn-sm z-depth-0" role="button">Pre-Registration</a>
+        <a href="{{ entry.preregistration }}" class="btn btn-sm z-depth-0" role="button">{% if entry.preregistration_label %}{{ entry.preregistration_label }}{% else %}Pre-Registration{% endif %}</a>
+      {% endif %}
+      {% if entry.preregistration2 %}
+        <a href="{{ entry.preregistration2 }}" class="btn btn-sm z-depth-0" role="button">{% if entry.preregistration2_label %}{{ entry.preregistration2_label }}{% else %}Pre-Registration{% endif %}</a>
       {% endif %}
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
