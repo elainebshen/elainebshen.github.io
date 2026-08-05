@@ -25,7 +25,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Welcome! I am a PhD candidate in the Department of Economics at [UC Berkeley](https://www.econ.berkeley.edu/). My research is in applied microeconomics and focuses on how individuals make high-stakes financial, labor, and health decisions.
+Welcome! I am a PhD candidate in the Department of Economics at [UC Berkeley](https://www.econ.berkeley.edu/). My research is in applied microeconomics and focuses on how individuals make high-stakes financial, labor market, and health care decisions.
 
 **I am on the 2026-2027 job market!**
 
