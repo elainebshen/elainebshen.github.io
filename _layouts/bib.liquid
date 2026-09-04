@@ -219,7 +219,17 @@
       {% endif %}
       {% if entry.html %}
         {% if entry.html contains '://' %}
-          <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
+          {%- comment -%}
+            A URL ending in "?v" gets the site build timestamp appended, so each
+            deploy yields a fresh URL and browsers cannot serve a stale cached PDF.
+          {%- endcomment -%}
+          {% assign paper_href = entry.html %}
+          {% assign html_tail = entry.html | slice: -2, 2 %}
+          {% if html_tail == '?v' %}
+            {% assign verstamp = site.time | date: '%s' %}
+            {% assign paper_href = entry.html | append: '=' | append: verstamp %}
+          {% endif %}
+          <a href="{{ paper_href }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
         {% else %}
           <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
         {% endif %}
