@@ -218,21 +218,29 @@
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
       {% if entry.html %}
+        {%- comment -%}
+          Paper link resolution:
+            - contains "://"   -> external URL, used as-is
+            - starts with "/"  -> site-root-relative path, e.g. /assets/pdf/JMP_latest.pdf
+            - otherwise        -> bare filename served from /assets/html/
+          A value ending in "?v" gets the site build timestamp appended, so every
+          deploy yields a fresh URL and browsers cannot serve a stale cached PDF.
+          That lets a permanent path host a frequently-updated PDF.
+        {%- endcomment -%}
+        {% assign html_first = entry.html | slice: 0, 1 %}
         {% if entry.html contains '://' %}
-          {%- comment -%}
-            A URL ending in "?v" gets the site build timestamp appended, so each
-            deploy yields a fresh URL and browsers cannot serve a stale cached PDF.
-          {%- endcomment -%}
           {% assign paper_href = entry.html %}
-          {% assign html_tail = entry.html | slice: -2, 2 %}
-          {% if html_tail == '?v' %}
-            {% assign verstamp = site.time | date: '%s' %}
-            {% assign paper_href = entry.html | append: '=' | append: verstamp %}
-          {% endif %}
-          <a href="{{ paper_href }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
+        {% elsif html_first == '/' %}
+          {% assign paper_href = entry.html | relative_url %}
         {% else %}
-          <a href="{{ entry.html | prepend: '/assets/html/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
+          {% assign paper_href = entry.html | prepend: '/assets/html/' | relative_url %}
         {% endif %}
+        {% assign html_tail = entry.html | slice: -2, 2 %}
+        {% if html_tail == '?v' %}
+          {% assign verstamp = site.time | date: '%s' %}
+          {% assign paper_href = paper_href | append: '=' | append: verstamp %}
+        {% endif %}
+        <a href="{{ paper_href }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
