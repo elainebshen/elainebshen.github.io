@@ -48,10 +48,7 @@ layout: default
           {% endif %}
           {% assign cv_href = cv_href | append: '?v=' | append: cv_stamp %}
           <div class="cv-box">
-            <a href="{{ cv_href }}" class="cv-box-link" role="button">
-              <i class="fa-solid fa-file-lines"></i>
-              {{ page.profile.cv_button_text | default: 'Curriculum Vitae' }}
-            </a>
+            <a href="{{ cv_href }}" class="cv-box-link" role="button">{{ page.profile.cv_button_text | default: 'CV' }}</a>
           </div>
         {% endif %}
       </div>

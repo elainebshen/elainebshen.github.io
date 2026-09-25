@@ -226,21 +226,18 @@ ul.timeline li::before {
 
   .cv-box-link {
     display: block;
-    padding: 0.6rem 1rem;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 6px;
-    color: var(--global-text-color);
+    padding: 0.55rem 1rem;
+    border: 1px solid var(--global-cv-navy);
+    border-radius: 4px;
+    color: var(--global-cv-navy);
     font-weight: 500;
+    letter-spacing: 0.02em;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 
-    i {
-      margin-right: 0.4rem;
-    }
-
     &:hover {
-      border-color: var(--global-theme-color);
-      color: var(--global-theme-color);
+      background-color: var(--global-cv-navy);
+      color: var(--global-bg-color);
       text-decoration: none;
     }
   }
