@@ -2,21 +2,27 @@
 layout: page
 permalink: /cv/
 title: CV
-nav: false
-nav_order: 5
-description: CV available upon request. A downloadable PDF will be posted here soon.
+nav: true
+nav_order: 4
+description:
 ---
 
-A current CV is available upon request &mdash; please email me at elaineshen [at] berkeley [dot] edu.
+{%- comment -%}
+  The build timestamp on the URL guarantees visitors get the newly posted CV
+  rather than a copy their browser cached from an earlier visit.
+{%- endcomment -%}
+{% assign cv_stamp = site.time | date: '%s' %}
+{% assign cv_href = '/assets/pdf/Elaine_Shen_CV.pdf' | relative_url | append: '?v=' | append: cv_stamp %}
 
-<!--
-When you're ready to publish the PDF, do ONE of the following in this file's front matter and remove this comment:
+<a href="{{ cv_href }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener">
+  <i class="fa-solid fa-download"></i> Download CV (PDF)
+</a>
 
-  Option A (committed to repo):
-    1. Drop the file at assets/pdf/ES_CV.pdf
-    2. Add to the front matter above:  cv_pdf: ES_CV.pdf
-    3. Use layout: cv  (instead of layout: page) if you want the structured CV layout
-
-  Option B (external link, e.g. Dropbox):
-    cv_pdf: https://www.dropbox.com/scl/.../ES_CV.pdf?dl=1
--->
+<div class="cv-embed mt-3">
+  <object data="{{ cv_href }}" type="application/pdf" aria-label="Curriculum Vitae">
+    <div class="cv-embed-fallback">
+      <p>Your browser can&rsquo;t display the PDF inline.</p>
+      <p><a href="{{ cv_href }}" target="_blank" rel="noopener">Open the CV in a new tab</a></p>
+    </div>
+  </object>
+</div>

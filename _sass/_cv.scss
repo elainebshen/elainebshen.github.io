@@ -218,3 +218,57 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+/* Boxed CV button under the home-page profile image */
+.cv-box {
+  margin-top: 1rem;
+  text-align: center;
+
+  .cv-box-link {
+    display: block;
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 6px;
+    color: var(--global-text-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    i {
+      margin-right: 0.4rem;
+    }
+
+    &:hover {
+      border-color: var(--global-theme-color);
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+/* Inline PDF viewer on the /cv page */
+.cv-embed {
+  width: 100%;
+  height: 80vh;
+  min-height: 500px;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  overflow: hidden;
+
+  object {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cv-embed-fallback {
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .cv-embed {
+    height: 60vh;
+    min-height: 360px;
+  }
+}

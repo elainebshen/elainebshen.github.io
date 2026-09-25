@@ -35,6 +35,25 @@ layout: default
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
+        {%- comment -%}
+          Boxed CV button under the profile image. The build timestamp appended to
+          the URL means a freshly posted CV is never served from a stale cache.
+        {%- endcomment -%}
+        {% if page.profile.cv_pdf %}
+          {% assign cv_stamp = site.time | date: '%s' %}
+          {% if page.profile.cv_pdf contains '://' %}
+            {% assign cv_href = page.profile.cv_pdf %}
+          {% else %}
+            {% assign cv_href = page.profile.cv_pdf | relative_url %}
+          {% endif %}
+          {% assign cv_href = cv_href | append: '?v=' | append: cv_stamp %}
+          <div class="cv-box">
+            <a href="{{ cv_href }}" class="cv-box-link" role="button">
+              <i class="fa-solid fa-file-lines"></i>
+              {{ page.profile.cv_button_text | default: 'Curriculum Vitae' }}
+            </a>
+          </div>
+        {% endif %}
       </div>
     {% endif %}
 

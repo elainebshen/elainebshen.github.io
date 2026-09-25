@@ -4,7 +4,7 @@ permalink: /tilden/
 title: Tilden
 description:
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 I have a husky named **Tilden** that I am obsessed with! Some fun facts about Tilden:
