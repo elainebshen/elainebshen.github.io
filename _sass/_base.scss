@@ -804,6 +804,12 @@ footer.sticky-bottom {
         }
       }
 
+      .presentations {
+        font-size: 0.85rem;
+        color: var(--global-text-color-light);
+        margin-bottom: 0.4rem;
+      }
+
       .links {
         a.btn {
           color: var(--global-text-color);
