@@ -1,4 +1,6 @@
 User-agent: *
-Disallow:
+# Ask crawlers not to index hosted PDFs. Directory-level on purpose: naming
+# an individual file here would publicly advertise the path we want kept quiet.
+Disallow: /assets/pdf/
 
 Sitemap: https://www.elaine-shen.com/sitemap.xml
