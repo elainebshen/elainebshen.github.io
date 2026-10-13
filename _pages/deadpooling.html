@@ -5,14 +5,14 @@ sitemap: false
 ---
 {%- comment -%}
   Short, stable link to the Deadpooling draft: www.elaine-shen.com/deadpooling
-  Forwards to the hosted PDF with the build timestamp appended, so every
-  deploy hands visitors a fresh URL and they never get a stale cached copy.
-  To point /deadpooling at a different file later, change pdf_path below; the
-  /deadpooling link itself never needs to change.
+  Forwards to Margaret Kallus's own hosted copy, so it always shows her latest
+  draft with no uploads needed here. The build timestamp is appended so visitors
+  never get a stale cached copy. To point /deadpooling elsewhere later, change
+  pdf_url below; the /deadpooling link itself never needs to change.
 {%- endcomment -%}
-{%- assign pdf_path = '/assets/pdf/Kallus_Shen_Deadpooling.pdf' -%}
+{%- assign pdf_url = 'https://margaretgkallus.github.io/Kallus_JMP_draft.pdf' -%}
 {%- assign verstamp = site.time | date: '%s' -%}
-{%- capture target -%}{{ pdf_path | relative_url }}?v={{ verstamp }}{%- endcapture -%}
+{%- capture target -%}{{ pdf_url }}?v={{ verstamp }}{%- endcapture -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
