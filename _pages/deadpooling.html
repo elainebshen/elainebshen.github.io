@@ -1,0 +1,28 @@
+---
+permalink: /deadpooling/
+layout: null
+sitemap: false
+---
+{%- comment -%}
+  Short, stable link to the Deadpooling draft: www.elaine-shen.com/deadpooling
+  Forwards to the hosted PDF with the build timestamp appended, so every
+  deploy hands visitors a fresh URL and they never get a stale cached copy.
+  To point /deadpooling at a different file later, change pdf_path below; the
+  /deadpooling link itself never needs to change.
+{%- endcomment -%}
+{%- assign pdf_path = '/assets/pdf/Kallus_Shen_Deadpooling.pdf' -%}
+{%- assign verstamp = site.time | date: '%s' -%}
+{%- capture target -%}{{ pdf_path | relative_url }}?v={{ verstamp }}{%- endcapture -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="refresh" content="0; url={{ target }}">
+  <title>Deadpooling &mdash; Kallus &amp; Shen</title>
+  <script>window.location.replace("{{ target }}");</script>
+</head>
+<body>
+  <p>Redirecting to the latest version of the paper&hellip; If nothing happens, <a href="{{ target }}">click here</a>.</p>
+</body>
+</html>
