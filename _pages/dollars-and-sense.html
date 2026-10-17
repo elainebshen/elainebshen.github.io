@@ -1,0 +1,28 @@
+---
+permalink: /dollars-and-sense/
+layout: null
+sitemap: false
+---
+{%- comment -%}
+  Short, stable link to the Dollars and Sense paper hosted on this site: www.elaine-shen.com/dollars-and-sense
+  The build timestamp is appended so visitors never get a stale cached copy.
+  To point /dollars-and-sense elsewhere later, change pdf_url below; the /dollars-and-sense link itself
+  never needs to change.
+{%- endcomment -%}
+{%- assign pdf_url = '/assets/pdf/Shen_fin_lit_selection.pdf' -%}
+{%- assign verstamp = site.time | date: '%s' -%}
+{%- if pdf_url contains '://' -%}{%- assign base = pdf_url -%}{%- else -%}{%- assign base = pdf_url | relative_url -%}{%- endif -%}
+{%- capture target -%}{{ base }}?v={{ verstamp }}{%- endcapture -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="refresh" content="0; url={{ target }}">
+  <title>Dollars and Sense &mdash; Lyu, Shen &amp; Voss</title>
+  <script>window.location.replace("{{ target }}");</script>
+</head>
+<body>
+  <p>Redirecting to the latest version of the paper&hellip; If nothing happens, <a href="{{ target }}">click here</a>.</p>
+</body>
+</html>
