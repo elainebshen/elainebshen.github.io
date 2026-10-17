@@ -212,21 +212,6 @@
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
       {% endif %}
-      {% if entry.preregistration %}
-        <a href="{{ entry.preregistration }}" class="btn btn-sm z-depth-0" role="button">{% if entry.preregistration_label %}{{ entry.preregistration_label }}{% else %}Pre-Registration{% endif %}</a>
-      {% endif %}
-      {% if entry.preregistration2 %}
-        <a href="{{ entry.preregistration2 }}" class="btn btn-sm z-depth-0" role="button">{% if entry.preregistration2_label %}{{ entry.preregistration2_label }}{% else %}Pre-Registration{% endif %}</a>
-      {% endif %}
-      {% if entry.doi %}
-        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
-      {% endif %}
-      {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
-      {% endif %}
-      {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-      {% endif %}
       {% if entry.html %}
         {%- comment -%}
           Paper link resolution:
@@ -251,6 +236,21 @@
           {% assign paper_href = paper_href | append: '=' | append: verstamp %}
         {% endif %}
         <a href="{{ paper_href }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
+      {% endif %}
+      {% if entry.preregistration %}
+        <a href="{{ entry.preregistration }}" class="btn btn-sm z-depth-0" role="button">{% if entry.preregistration_label %}{{ entry.preregistration_label }}{% else %}Pre-Registration{% endif %}</a>
+      {% endif %}
+      {% if entry.preregistration2 %}
+        <a href="{{ entry.preregistration2 }}" class="btn btn-sm z-depth-0" role="button">{% if entry.preregistration2_label %}{{ entry.preregistration2_label }}{% else %}Pre-Registration{% endif %}</a>
+      {% endif %}
+      {% if entry.doi %}
+        <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
+      {% endif %}
+      {% if entry.arxiv %}
+        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
+      {% endif %}
+      {% if entry.bibtex_show %}
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
