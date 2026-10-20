@@ -23,11 +23,9 @@ nav_order: 3
   </summary>
   <div class="quotes">
     <p class="quotes-label">What students said</p>
-    <blockquote>&ldquo;Take this class with Dmitry and Elaine if possible! It&rsquo;s super interesting. Elaine is hands-down the best, most patient, and kindest GSI I have ever had.&rdquo;</blockquote>
     <blockquote>&ldquo;Explained concepts very clearly and thoroughly. I have never had a better experience with a GSI. She had a great attitude towards us, was always prepared, and was very flexible and generous with her time. She made me enjoy this difficult class and I would not have been able to understand the content without her.&rdquo;</blockquote>
+    <blockquote>&ldquo;Take this class with Dmitry and Elaine if possible! It&rsquo;s super interesting. Elaine is hands-down the best, most patient, and kindest GSI I have ever had.&rdquo;</blockquote>
     <blockquote>&ldquo;Elaine explained topics extremely clearly, helped walk us through problem solving approaches, and was overall extremely effective at preparing us for examinations while helping us learn.&rdquo;</blockquote>
-    <blockquote>&ldquo;Elaine is very thorough when going over section content and is able to perfectly pace the questions while making sure everyone understands the content without going too fast. Very down to earth and is able to relate to the students being taught.&rdquo;</blockquote>
-    <blockquote>&ldquo;Elaine was extremely helpful and did a great job making the concepts more digestible/intuitive, she was also always available for questions, feedback, office hours, etc. (which is appreciated)!&rdquo;</blockquote>
     <blockquote>&ldquo;Make sure Elaine is your GSI.&rdquo;</blockquote>
     <p class="quotes-link"><a href="{{ '/assets/pdf/econ119_evaluations.pdf' | relative_url }}">Full teaching evaluations (PDF)</a></p>
   </div>
