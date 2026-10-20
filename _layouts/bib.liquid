@@ -237,6 +237,30 @@
         {% endif %}
         <a href="{{ paper_href }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
       {% endif %}
+      {%- comment -%}
+        Appendix button. supp may be an external URL, a site-root path (e.g.
+        /jmp-appendix/), or a bare filename under /assets/pdf/. If supp_file is
+        set, the button only appears once that file exists in the repo, so a
+        not-yet-uploaded appendix never shows as a broken link.
+      {%- endcomment -%}
+      {% if entry.supp %}
+        {% assign show_supp = true %}
+        {% if entry.supp_file %}
+          {% capture supp_ready %}{% file_exists {{ entry.supp_file }} %}{% endcapture %}
+          {% if supp_ready != 'true' %}{% assign show_supp = false %}{% endif %}
+        {% endif %}
+        {% if show_supp %}
+          {% assign supp_first = entry.supp | slice: 0, 1 %}
+          {% if entry.supp contains '://' %}
+            {% assign supp_href = entry.supp %}
+          {% elsif supp_first == '/' %}
+            {% assign supp_href = entry.supp | relative_url %}
+          {% else %}
+            {% assign supp_href = entry.supp | prepend: '/assets/pdf/' | relative_url %}
+          {% endif %}
+          <a href="{{ supp_href }}" class="btn btn-sm z-depth-0" role="button">{{ entry.supp_label | default: 'Online Appendix' }}</a>
+        {% endif %}
+      {% endif %}
       {% if entry.preregistration %}
         <a href="{{ entry.preregistration }}" class="btn btn-sm z-depth-0" role="button">{% if entry.preregistration_label %}{{ entry.preregistration_label }}{% else %}Pre-Registration{% endif %}</a>
       {% endif %}
@@ -257,13 +281,6 @@
           <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
         {% else %}
           <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
-        {% endif %}
-      {% endif %}
-      {% if entry.supp %}
-        {% if entry.supp contains '://' %}
-          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Appendix</a>
-        {% else %}
-          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Appendix</a>
         {% endif %}
       {% endif %}
       {% if entry.video and site.enable_video_embedding %}
