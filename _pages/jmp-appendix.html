@@ -1,0 +1,34 @@
+---
+permalink: /jmp-appendix/
+layout: null
+sitemap: false
+---
+{%- comment -%}
+  Short, stable link to the job market paper's online appendix:
+  www.elaine-shen.com/jmp-appendix
+  Forwards to the hosted PDF with the build timestamp appended, so visitors never
+  get a stale cached copy. Until the PDF exists, shows a short placeholder note.
+{%- endcomment -%}
+{%- assign pdf_file = 'assets/pdf/Shen_Price_of_Free_Advice_Online_Appendix.pdf' -%}
+{%- capture ready -%}{% file_exists {{ pdf_file }} %}{%- endcapture -%}
+{%- assign verstamp = site.time | date: '%s' -%}
+{%- capture target -%}{{ pdf_file | prepend: '/' | relative_url }}?v={{ verstamp }}{%- endcapture -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Online Appendix &mdash; The Price of &ldquo;Free&rdquo; Advice</title>
+{%- if ready == 'true' %}
+  <meta http-equiv="refresh" content="0; url={{ target }}">
+  <script>window.location.replace("{{ target }}");</script>
+{%- endif %}
+</head>
+<body>
+{%- if ready == 'true' %}
+  <p>Redirecting to the latest version of the online appendix&hellip; If nothing happens, <a href="{{ target }}">click here</a>.</p>
+{%- else %}
+  <p>The online appendix for <em>The Price of &ldquo;Free&rdquo; Advice</em> will be posted here soon.</p>
+{%- endif %}
+</body>
+</html>
