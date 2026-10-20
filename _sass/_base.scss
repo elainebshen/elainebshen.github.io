@@ -1523,6 +1523,10 @@ figure.cover {
   }
 }
 
+.course + h2 {
+  margin-top: 2rem;
+}
+
 @media (max-width: 576px) {
   .course .course-head {
     flex-direction: column;
