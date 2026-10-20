@@ -9,13 +9,41 @@ nav_order: 3
 
 ## UC Berkeley (Economics Department, Haas Business School)
 
-I worked as a graduate student instructor (GSI) for:
+<p class="text-muted">Click a course to read student comments.</p>
 
-- **ECON 119: Behavioral Economics** (Dmitry Taubinsky)
-  - GSI Teaching Award (first semester teaching)
-  - [Teaching Evaluations]({{ '/assets/pdf/econ119_evaluations.pdf' | relative_url }})
-- **EWMBA 201B: Evening &amp; Weekend MBA Macroeconomics** (Jim Wilcox)
-  - [Teaching Evaluations]({{ '/assets/pdf/ewmba201b_evaluations.pdf' | relative_url }})
+<details class="course has-quotes">
+  <summary>
+    <div class="course-head">
+      <div>
+        <div class="course-name">ECON 119: Behavioral Economics</div>
+        <div class="course-meta">GSI for Dmitry Taubinsky &middot; GSI Teaching Award (first semester teaching)</div>
+      </div>
+      <div class="course-term">Fall 2023</div>
+    </div>
+  </summary>
+  <div class="quotes">
+    <p class="quotes-label">What students said</p>
+    <blockquote>&ldquo;Take this class with Dmitry and Elaine if possible! It&rsquo;s super interesting. Elaine is hands-down the best, most patient, and kindest GSI I have ever had.&rdquo;</blockquote>
+    <blockquote>&ldquo;Explained concepts very clearly and thoroughly. I have never had a better experience with a GSI. She had a great attitude towards us, was always prepared, and was very flexible and generous with her time. She made me enjoy this difficult class and I would not have been able to understand the content without her.&rdquo;</blockquote>
+    <blockquote>&ldquo;Elaine explained topics extremely clearly, helped walk us through problem solving approaches, and was overall extremely effective at preparing us for examinations while helping us learn.&rdquo;</blockquote>
+    <blockquote>&ldquo;Elaine is very thorough when going over section content and is able to perfectly pace the questions while making sure everyone understands the content without going too fast. Very down to earth and is able to relate to the students being taught.&rdquo;</blockquote>
+    <blockquote>&ldquo;Elaine was extremely helpful and did a great job making the concepts more digestible/intuitive, she was also always available for questions, feedback, office hours, etc. (which is appreciated)!&rdquo;</blockquote>
+    <blockquote>&ldquo;Make sure Elaine is your GSI.&rdquo;</blockquote>
+    <p class="quotes-link"><a href="{{ '/assets/pdf/econ119_evaluations.pdf' | relative_url }}">Full teaching evaluations (PDF)</a></p>
+  </div>
+</details>
+
+<div class="course">
+  <div class="course-body">
+    <div class="course-head">
+      <div>
+        <div class="course-name">EWMBA 201B: Evening &amp; Weekend MBA Macroeconomics</div>
+        <div class="course-meta">GSI for Jim Wilcox &middot; <a href="{{ '/assets/pdf/ewmba201b_evaluations.pdf' | relative_url }}">Teaching Evaluations</a></div>
+      </div>
+      <div class="course-term">Spring 2025</div>
+    </div>
+  </div>
+</div>
 
 ## Georgetown University
 

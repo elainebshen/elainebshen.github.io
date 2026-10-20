@@ -1424,3 +1424,108 @@ figure.cover {
   font-size: 0.9rem;
   color: var(--global-text-color-light);
 }
+// Teaching page: course cards that expand to show student comments
+.course {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.75rem;
+  margin-bottom: 0.75rem;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &.has-quotes:hover,
+  &[open] {
+    border-color: var(--global-theme-color);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  }
+
+  > summary,
+  > .course-body {
+    display: block;
+    cursor: pointer;
+    list-style: none;
+    padding: 0.9rem 1.1rem;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  > .course-body {
+    cursor: default;
+  }
+
+  .course-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .course-name {
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+
+  &.has-quotes .course-name::after {
+    content: "\25B8";
+    display: inline-block;
+    margin-left: 0.35rem;
+    font-size: 0.8rem;
+    color: var(--global-theme-color);
+    transition: transform 0.2s ease;
+  }
+
+  &[open] .course-name::after {
+    transform: rotate(90deg);
+  }
+
+  .course-meta {
+    color: var(--global-text-color-light);
+    font-size: 0.92rem;
+    margin-top: 0.2rem;
+  }
+
+  .course-term {
+    color: var(--global-theme-color);
+    font-weight: 600;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+
+  .quotes {
+    border-top: 1px solid var(--global-divider-color);
+    padding: 0.25rem 1.1rem 1rem;
+  }
+
+  .quotes-label {
+    color: var(--global-text-color-light);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0.9rem 0 0.25rem;
+  }
+
+  .quotes blockquote {
+    background: none;
+    border-left: 3px solid var(--global-theme-color);
+    margin: 0.65rem 0 0;
+    padding: 0.1rem 0 0.1rem 0.9rem;
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  .quotes-link {
+    margin: 0.9rem 0 0;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .course .course-head {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}
