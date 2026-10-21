@@ -39,7 +39,7 @@ nav_order: 3
         <div class="course-name">EWMBA 201B: Evening &amp; Weekend MBA Macroeconomics</div>
         <div class="course-meta">GSI for Jim Wilcox &middot; <a href="{{ '/assets/pdf/ewmba201b_evaluations.pdf' | relative_url }}">Teaching Evaluations</a></div>
       </div>
-      <div class="course-term">Spring 2025</div>
+      <div class="course-term">Spring 2025, 2024</div>
     </div>
   </summary>
   <div class="quotes">
