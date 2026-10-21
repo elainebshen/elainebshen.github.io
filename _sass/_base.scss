@@ -1467,19 +1467,6 @@ figure.cover {
     font-size: 1.05rem;
   }
 
-  &.has-quotes .course-name::after {
-    content: "\25B8";
-    display: inline-block;
-    margin-left: 0.35rem;
-    font-size: 0.8rem;
-    color: var(--global-theme-color);
-    transition: transform 0.2s ease;
-  }
-
-  &[open] .course-name::after {
-    transform: rotate(90deg);
-  }
-
   .course-meta {
     color: var(--global-text-color-light);
     font-size: 0.92rem;

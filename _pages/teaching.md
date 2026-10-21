@@ -17,7 +17,7 @@ nav_order: 3
       <div>
         <div class="course-name">ECON 119: Behavioral Economics</div>
         <div class="course-meta">GSI for Dmitry Taubinsky &middot; <a href="{{ '/assets/pdf/econ119_evaluations.pdf' | relative_url }}">Teaching Evaluations</a></div>
-        <div class="course-meta">GSI Teaching Award (first semester teaching)</div>
+        <div class="course-meta">Outstanding Graduate Student Instructor Award (first semester teaching)</div>
       </div>
       <div class="course-term">Fall 2023</div>
     </div>
