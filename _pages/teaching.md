@@ -44,8 +44,10 @@ nav_order: 3
   </summary>
   <div class="quotes">
     <p class="quotes-label">What students said</p>
+    <blockquote>&ldquo;Elaine was the best! She did a great job explaining some of the more complex concepts. I really enjoyed attending the GSI sessions. Anytime I emailed, she would always respond promptly and with a great amount of detail. I truly appreciate Elaine, and she helped me get through this class.&rdquo;</blockquote>
     <blockquote>&ldquo;Elaine has been highly instrumental in understanding the basics and practical applications of macroeconomics.&rdquo;</blockquote>
-    <blockquote>&ldquo;Anytime I emailed, she would always respond promptly and with a great amount of detail.&rdquo;</blockquote>
+    <blockquote>&ldquo;Elaine is AMAZING! Her review sessions were super helpful and useful. She readily broke down the concepts and was receptive to questions.&rdquo;</blockquote>
+    <blockquote>&ldquo;Really appreciate Elaine spending so much time every week with us. It helped me understand the weekly concepts much better. Thanks Elaine!&rdquo;</blockquote>
   </div>
 </details>
 
