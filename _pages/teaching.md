@@ -32,8 +32,8 @@ nav_order: 3
   </div>
 </details>
 
-<div class="course">
-  <div class="course-body">
+<details class="course has-quotes">
+  <summary>
     <div class="course-head">
       <div>
         <div class="course-name">EWMBA 201B: Evening &amp; Weekend MBA Macroeconomics</div>
@@ -41,8 +41,13 @@ nav_order: 3
       </div>
       <div class="course-term">Spring 2025</div>
     </div>
+  </summary>
+  <div class="quotes">
+    <p class="quotes-label">What students said</p>
+    <blockquote>&ldquo;Elaine has been highly instrumental in understanding the basics and practical applications of macroeconomics.&rdquo;</blockquote>
+    <blockquote>&ldquo;Anytime I emailed, she would always respond promptly and with a great amount of detail.&rdquo;</blockquote>
   </div>
-</div>
+</details>
 
 ## Georgetown University
 
