@@ -16,7 +16,7 @@ nav_order: 3
     <div class="course-head">
       <div>
         <div class="course-name">ECON 119: Behavioral Economics</div>
-        <div class="course-meta">GSI for Dmitry Taubinsky &middot; GSI Teaching Award (first semester teaching)</div>
+        <div class="course-meta">GSI for Dmitry Taubinsky &middot; GSI Teaching Award (first semester teaching) &middot; <a href="{{ '/assets/pdf/econ119_evaluations.pdf' | relative_url }}">Teaching Evaluations</a></div>
       </div>
       <div class="course-term">Fall 2023</div>
     </div>
@@ -27,7 +27,6 @@ nav_order: 3
     <blockquote>&ldquo;Take this class with Dmitry and Elaine if possible! It&rsquo;s super interesting. Elaine is hands-down the best, most patient, and kindest GSI I have ever had.&rdquo;</blockquote>
     <blockquote>&ldquo;Elaine explained topics extremely clearly, helped walk us through problem solving approaches, and was overall extremely effective at preparing us for examinations while helping us learn.&rdquo;</blockquote>
     <blockquote>&ldquo;Make sure Elaine is your GSI.&rdquo;</blockquote>
-    <p class="quotes-link"><a href="{{ '/assets/pdf/econ119_evaluations.pdf' | relative_url }}">Full teaching evaluations (PDF)</a></p>
   </div>
 </details>
 
