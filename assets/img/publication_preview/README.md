@@ -23,7 +23,7 @@ Research page:
 Easiest: keep the same filename.
 
 1. Save your new image over the old one in this folder, using the **same name**
-   (e.g. replace `deadpooling.png`).
+   (e.g. replace `deadpooling_profit.png`).
 2. Commit and push. Done — no `.bib` change needed.
 
 If you want a new filename, also update the `preview={...}` line (see below).
@@ -51,8 +51,9 @@ If you want a new filename, also update the `preview={...}` line (see below).
 
 | File                    | Paper                | `.bib` file   |
 | ----------------------- | -------------------- | ------------- |
+| `price_of_free_advice.png` | The Price of "Free" Advice | `working.bib` |
 | `dollars_and_sense.png` | Dollars and Sense    | `working.bib` |
-| `deadpooling.png`       | Deadpooling          | `working.bib` |
+| `deadpooling_profit.png` | Deadpooling         | `working.bib` |
 | `hidden_curriculum.png` | The Hidden Curriculum| `working.bib` |
 
 ## Writing the .bib entries themselves
