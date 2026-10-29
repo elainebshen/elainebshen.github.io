@@ -52,7 +52,6 @@ If you want a new filename, also update the `preview={...}` line (see below).
 | File                    | Paper                | `.bib` file   |
 | ----------------------- | -------------------- | ------------- |
 | `price_of_free_advice.png` | The Price of "Free" Advice | `working.bib` |
-| `dollars_and_sense.png` | Dollars and Sense    | `working.bib` |
 | `deadpooling_profit_a.png` | Deadpooling         | `working.bib` |
 | `hidden_curriculum.png` | The Hidden Curriculum| `working.bib` |
 
