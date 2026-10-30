@@ -1520,3 +1520,17 @@ figure.cover {
     gap: 0.2rem;
   }
 }
+
+// Highlight tag above a publication title (bib field: tag={...})
+.publications .entry-tag {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: var(--global-theme-color);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
