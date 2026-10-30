@@ -53,7 +53,7 @@ If you want a new filename, also update the `preview={...}` line (see below).
 | ----------------------- | -------------------- | ------------- |
 | `price_of_free_advice.png` | The Price of "Free" Advice | `working.bib` |
 | `deadpooling_profit_a.png` | Deadpooling         | `working.bib` |
-| `dollars_and_sense_selection.png` | Dollars and Sense | `working.bib` |
+| `dollars_and_sense_wtp_gain.png` | Dollars and Sense | `working.bib` |
 | `hidden_curriculum.png` | The Hidden Curriculum| `working.bib` |
 
 ## Writing the .bib entries themselves
