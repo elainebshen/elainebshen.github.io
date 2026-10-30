@@ -1534,3 +1534,8 @@ figure.cover {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
+// Note appended to a publication title (bib field: title_note={...}); kept on one line
+.publications .title-note {
+  white-space: nowrap;
+}

@@ -52,7 +52,8 @@
       <div class="entry-tag">{{ entry.tag }}</div>
     {% endif %}
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    {%- comment -%} title_note is appended to the title, e.g. title_note={Job Market Paper} {%- endcomment -%}
+    <div class="title">{{ entry.title }}{% if entry.title_note %} <span class="title-note">({{ entry.title_note }})</span>{% endif %}</div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
