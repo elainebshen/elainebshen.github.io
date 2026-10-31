@@ -13,16 +13,4 @@ sitemap: false
 {%- assign verstamp = site.time | date: '%s' -%}
 {%- if pdf_url contains '://' -%}{%- assign base = pdf_url -%}{%- else -%}{%- assign base = pdf_url | relative_url -%}{%- endif -%}
 {%- capture target -%}{{ base }}?v={{ verstamp }}{%- endcapture -%}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="robots" content="noindex, nofollow">
-  <meta http-equiv="refresh" content="0; url={{ target }}">
-  <title>The Hidden Curriculum &mdash; Cuna &amp; Shen</title>
-  <script>window.location.replace("{{ target }}");</script>
-</head>
-<body>
-  <p>Redirecting to the latest version of the paper&hellip; If nothing happens, <a href="{{ target }}">click here</a>.</p>
-</body>
-</html>
+{% include short_link_redirect.liquid target=target label="hidden-curriculum" title="The Hidden Curriculum &mdash; Cuna &amp; Shen" message="Redirecting to the latest version of the paper&hellip;" %}

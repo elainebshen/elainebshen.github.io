@@ -13,16 +13,4 @@ sitemap: false
 {%- assign pdf_path = '/assets/pdf/Shen_Price_of_Free_Advice.pdf' -%}
 {%- assign verstamp = site.time | date: '%s' -%}
 {%- capture target -%}{{ pdf_path | relative_url }}?v={{ verstamp }}{%- endcapture -%}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="robots" content="noindex, nofollow">
-  <meta http-equiv="refresh" content="0; url={{ target }}">
-  <title>The Price of &ldquo;Free&rdquo; Advice &mdash; Elaine Shen</title>
-  <script>window.location.replace("{{ target }}");</script>
-</head>
-<body>
-  <p>Redirecting to the latest version of the paper&hellip; If nothing happens, <a href="{{ target }}">click here</a>.</p>
-</body>
-</html>
+{% include short_link_redirect.liquid target=target label="jmp" title="The Price of &ldquo;Free&rdquo; Advice &mdash; Elaine Shen" message="Redirecting to the latest version of the paper&hellip;" %}

@@ -1,0 +1,59 @@
+{%- comment -%}
+  Shared body for the short-link redirect pages (/jmp, /deadpooling, ...).
+  Parameters:
+    target  - URL to forward to (already cache-stamped)
+    label   - short name recorded in Google Analytics, e.g. "jmp"
+    title   - page title
+    message - text shown while redirecting
+  Each visit is recorded as a Google Analytics "file_download" event with
+  file_name = label, then the page forwards to the PDF. The redirect waits for
+  Analytics to confirm the event, but never longer than about a second, and goes
+  straight away if Analytics is blocked or JavaScript is off.
+{%- endcomment -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>{{ include.title }}</title>
+  <noscript><meta http-equiv="refresh" content="0; url={{ include.target }}"></noscript>
+  <script>
+    (function () {
+      var target = "{{ include.target }}";
+      var gone = false;
+      function go() {
+        if (gone) return;
+        gone = true;
+        window.location.replace(target);
+      }
+      window.shortLinkGo = go;
+{%- if site.enable_google_analytics and site.google_analytics %}
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () {
+        window.dataLayer.push(arguments);
+      };
+      gtag("js", new Date());
+      gtag("config", "{{ site.google_analytics }}");
+      gtag("event", "file_download", {
+        file_name: "{{ include.label }}",
+        file_extension: "pdf",
+        link_url: target,
+        link_text: "{{ include.label }}",
+        transport_type: "beacon",
+        event_callback: go,
+        event_timeout: 1000,
+      });
+      setTimeout(go, 1200);
+{%- else %}
+      go();
+{%- endif %}
+    })();
+  </script>
+{%- if site.enable_google_analytics and site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}" onerror="window.shortLinkGo()"></script>
+{%- endif %}
+</head>
+<body>
+  <p>{{ include.message }} If nothing happens, <a href="{{ include.target }}">click here</a>.</p>
+</body>
+</html>
